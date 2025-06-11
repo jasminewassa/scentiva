@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scentiva - Linen Spray MBTI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffdf9;
+      color: #333;
+    }
+
+    header {
+      background: rgb(205,232,231);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 40%;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 1300px;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      flex: 0 0 50%;
+      max-width: 50%;
+      box-sizing: border-box;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    @media (max-width: 800px) {
+      .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .card-inner {
+      background: #fafafa;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .image-side {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-side img {
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .text-side {
+      width: 60%;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .text-side h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
+      color: #4e3f6b;
+    }
+
+    .text-side p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    .love-btn,
+    .cart-btn {
+      padding: 0.5rem 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .love-btn {
+      background: #ffd1dc;
+    }
+
+    .love-btn:hover {
+      background: #ff9db6;
+    }
+
+    .cart-btn {
+      background: #d1e8ff;
+    }
+
+    .cart-btn:hover {
+      background: #a4d0ff;
+    }
+
+    .nav-button {
+      font-size: 2rem;
+      background: #e6e0f8;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.2);
+    }
+
+    .prev {
+      margin-right: 1rem;
+    }
+
+    .next {
+      margin-left: 1rem;
+    }
+
+    footer {
+      background: #e6e0f8;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/title.png" alt="Logo Scentiva">
+  </header>
+
+  <div class="carousel-container">
+    <button class="nav-button prev" onclick="moveSlide(-1)">❮</button>
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-inner" style="background-color: #ffe5b4;">
+            <div class="image-side">
+              <img src="img/ENFP.png" alt="ENFP Spray" />
+            </div>
+            <div class="text-side">
+              <h2>ENFP – Spark Your Spirit</h2>
+              <p>Jeruk mandarin dan ylang-ylang, mencerminkan jiwa bebas dan penuh semangatmu.</p>
+              <div class="buttons">
+                <button class="love-btn">❤️</button>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-inner" style="background-color: #e7d9f9;">
+            <div class="image-side">
+              <img src="img/INFP.png" alt="INFP Spray" />
+            </div>
+            <div class="text-side">
+              <h2>INFP – Dreamer's Embrace</h2>
+              <p>Lavender dan chamomile yang menenangkan, hadir untuk jiwa lembut dan penuh imajinasi.</p>
+              <div class="buttons">
+                <button class="love-btn">❤️</button>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-inner" style="background-color: #d7f5dd;">
+            <div class="image-side">
+              <img src="img/ISFP.png" alt="ISFP Spray" />
+            </div>
+            <div class="text-side">
+              <h2>ISFP – Nature's Whispers</h2>
+              <p>Wangi daun mint dan sandalwood, menyatu dengan kepribadian yang lembut dan alami.</p>
+              <div class="buttons">
+                <button class="love-btn">❤️</button>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-inner" style="background-color: #ffd6e8;">
+            <div class="image-side">
+              <img src="img/ESFP.png" alt="ESFP Spray" />
+            </div>
+            <div class="text-side">
+              <h2>ESFP – Shine Out Loud</h2>
+              <p>Buah persik dan bunga magnolia, aroma ceria untuk si penghibur sejati.</p>
+              <div class="buttons">
+                <button class="love-btn">❤️</button>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button class="nav-button next" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <footer>
+    Hubungi kami: <a href="mailto:hello@scentiva.id">hello@scentiva.id</a> | IG: @scentiva.id
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slider = document.getElementById('slider');
+    const cards = document.querySelectorAll('.card');
+
+    function getCardWidth() {
+      return cards[0].offsetWidth;
+    }
+
+    function moveSlide(direction) {
+      const cardsPerView = window.innerWidth < 800 ? 1 : 2;
+      const totalCards = cards.length;
+
+      currentIndex += direction;
+
+      // Infinite loop logic
+      if (currentIndex < 0) {
+        currentIndex = totalCards - cardsPerView;
+      } else if (currentIndex > totalCards - cardsPerView) {
+        currentIndex = 0;
+      }
+
+      const moveAmount = getCardWidth() * currentIndex;
+      slider.style.transform = `translateX(-${moveAmount}px)`;
+    }
+
+    window.addEventListener('resize', () => {
+      moveSlide(0); // Recalculate position
+    });
+  </script>
+
+</body>
+</html>
